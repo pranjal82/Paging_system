@@ -1,0 +1,30 @@
+file1 is loaded and is assigned process id 1
+file2 is loaded and is assigned process id 2
+file7 could not be loaded - file does not exist
+file3 is loaded and is assigned process id 3
+file4 is loaded and is assigned process id 4
+file5 is loaded and is assigned process id 5
+file6 is loaded and is assigned process id 6
+Command: print 1024; Result: Value in addr 1024 = 0
+Command: load 1, 1024; Result: Value of 1 is now stored in addr 1024
+Command: load 2, 5000; Result: Value of 2 is now stored in addr 5000
+Command: print 1024; Result: Value in addr 1024 = 1
+Command: print 5000; Result: Value in addr 5000 = 2
+Command: add 1024, 5000, 5100; Result: Value in addr 1024 = 1, addr 5000 = 2, addr 5100 = 3
+Command: print 5100; Result: Value in addr 5100 = 3
+Command: load 3, 1600; Result: Value of 3 is now stored in addr 1600
+Command: print 1024; Result: Value in addr 1024 = 0
+Command: print 5000; Result: Value in addr 5000 = 0
+Command: load 2, 1024; Result: Value of 2 is now stored in addr 1024
+Command: load 1, 5000; Result: Value of 1 is now stored in addr 5000
+Command: print 1024; Result: Value in addr 1024 = 2
+Command: print 5000; Result: Value in addr 5000 = 1
+Command: sub 1024, 5000, 5100; Result: Value in addr 1024 = 2, addr 5000 = 1, addr 5100 = 1
+Command: load 4, 4000; Result: Value of 4 is now stored in addr 4000
+Command: print 4000; Result: Value in addr 4000 = 4
+killed 2
+Command: print 5000; Result: Value in addr 5000 = 0
+Command: load 2, 6000; Result: Value of 2 is now stored in addr 6000
+Command: load 1, 1000; Result: Value of 1 is now stored in addr 1000
+Command: print 1000; Result: Value in addr 1000 = 1
+Command: print 6000; Result: Value in addr 6000 = 2
